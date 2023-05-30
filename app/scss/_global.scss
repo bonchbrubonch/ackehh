@@ -40,12 +40,25 @@ body {
   min-width: 320px;
   height: 100%;
   overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1160px;
   padding: 0px 15px;
   margin: 0 auto;
+}
+
+.title {
+  font-family: 'Yeseva One', cursive;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 140%;
+  text-transform: uppercase;
 }
 
 /*start pin footer to bottom*/
@@ -64,3 +77,20 @@ body {
 }
 
 /*end pin footer to bottom*/
+
+.social {
+  display: flex;
+  align-items: center;
+
+  li {
+    transition: linear .1s;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  li+li {
+    margin: 0 0 0 30px;
+  }
+}

@@ -20,7 +20,7 @@ function browsersync() {
 
 function scripts() {
   return src([
-    'node_modules/jquery/dist/jquery.min.js',
+    // 'node_modules/jquery/dist/jquery.min.js',
     
     'app/js/app.js',
   ])
@@ -32,8 +32,8 @@ function scripts() {
 
 function styles() {
   return src([
-  'app/scss/style.scss',
   'node_modules/normalize.css/normalize.css',
+  'app/scss/style.scss',
   ])
   .pipe(sass({
     outputStyle: "expanded"

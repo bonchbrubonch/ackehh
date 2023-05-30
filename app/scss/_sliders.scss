@@ -1,0 +1,26 @@
+.slick-arrow {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  transition: linear .1s;
+
+  svg path {
+    transition: linear .1s;
+  }
+}
+.slick-disabled{
+  border: none !important;
+  pointer-events: none;
+}
+.slider__left {
+  transform: rotate(180deg);
+}
