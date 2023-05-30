@@ -45,8 +45,14 @@ body {
   line-height: 140%;
   font-weight: 400;
   letter-spacing: 1px;
+  background-color: #000;
 }
-
+body.white{
+  background-color: #fff;
+  .header{
+    background-color: #000;
+  }
+}
 .container {
   max-width: 1160px;
   padding: 0px 15px;
@@ -92,5 +98,118 @@ body {
 
   li+li {
     margin: 0 0 0 30px;
+  }
+}
+
+.breadcrumbs {
+  background-color: transparent;
+  margin: 55px 0 10px;
+
+  &__inner {
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  &__list {
+    li {
+      display: inline;
+      position: relative;
+
+      font-size: 12px;
+      line-height: 140%;
+
+      &+li {
+        padding-left: 28px;
+
+        &::before {
+          content: "/";
+          position: absolute;
+          left: 8px;
+          top: 0;
+          width: 5px;
+          height: 8px;
+        }
+      }
+
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      
+    }
+  }
+
+  &--white {
+    
+    li{
+      color: #fff;
+      &:last-child {
+        color: #BFBFBF;
+      }
+      &::before {
+        color: #BFBFBF;
+      }
+    }
+  }
+  &--black{
+    margin: 40px 0 10px;
+    
+    li{
+      color: #000;
+      &:last-child {
+        color:  #BFBFBF;
+      }
+      
+    }
+  }
+}
+
+.pagination {
+  margin: 10px 0 0 0;
+  &__list {
+    display: inline-flex;
+    align-items: center;
+    justify-content: start;
+    border-bottom: 1px solid #FFFFFF;
+  }
+
+  li {
+    padding: 0 0 10px 0;
+    &+li {
+      margin-left: 20px;
+    }
+    &.active {
+      border-bottom: 2px solid #FFFFFF;
+      
+    }
+  }
+
+  a,
+  span {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #fff;
+
+    
+  }
+
+  &__last {
+    opacity: .9;
+    pointer-events: none;
+
+    
   }
 }
