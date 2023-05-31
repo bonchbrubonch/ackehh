@@ -857,6 +857,7 @@ body.white .header {
 }
 
 .modal {
+  display: none;
   padding: 90px 40px 40px 40px;
   max-width: 540px;
   width: 100%;
