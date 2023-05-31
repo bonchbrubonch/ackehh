@@ -1,0 +1,30 @@
+.form {
+  max-width: 455px;
+  width: 100%;
+
+  &__input-wrap {
+    width: 100%;
+    margin: 0 0 18px 0;
+    input {
+      padding: 2px 10px 10px 0;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #000000;
+      outline: none;
+    }
+
+    input::placeholder {
+      font-size: 14px;
+      line-height: 140%;
+      color: #BFBFBF;
+    }
+  }
+
+  .btn {
+    margin: 30px 0 0 0;
+    background-color: transparent;
+    &:hover{
+      background-color: #000;
+    }
+  }
+}

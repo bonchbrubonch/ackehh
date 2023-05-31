@@ -57,6 +57,18 @@ $(function () {
     readOnly: true
   });
 
+  $(".accordeon dd").hide().prev().click(function () {
+    $(this).parents(".accordeon").find("dd").not(this).slideUp().prev().removeClass("active");
+    $(this).next().not(":visible").slideDown().prev().addClass("active");
+    $("dl").removeClass("open");
+    $(this).parent().toggleClass("open");
+  });
+
+
+
+
+
+
   if ($('.slick-slider').length > 0) {
     $(".slick-slider").slick("refresh");
     $(".slick-slider").slick("setPosition");

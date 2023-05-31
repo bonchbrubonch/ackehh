@@ -1,0 +1,52 @@
+.accordeon {
+  padding: 88px 0 100px;
+  dl{
+    margin: 0 0 10px 0;
+  }
+  dt {
+    position: relative;
+    padding: 20px 65px 20px 24px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 120%;
+    cursor: pointer;
+    transition: linear .1s;
+    &::after,
+    &::before{
+      content: "";
+      position: absolute;
+      top: 34px;
+      right: 22px;
+      border-radius: 20px;
+      width: 20px;
+      height: 2px;
+      background-color: #000;
+      transition: linear .1s;
+    }
+    &::before{
+      transform: rotate(90deg);
+    }
+    &:hover{
+      background-color: #000;
+      color: #fff;
+      &::after,
+      &::before{
+        background-color: #fff;
+      }
+    }
+  }
+  dt.active{
+    background-color: #EFEFEF;
+    color: #000;
+    &::after,
+    &::before{
+      background-color: #000;
+    }
+  }
+  dd {
+    padding: 15px 30px 30px 55px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
