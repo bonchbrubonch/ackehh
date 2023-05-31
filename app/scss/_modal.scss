@@ -1,0 +1,80 @@
+.modal {
+  padding: 90px 40px 40px 40px;
+  max-width: 540px;
+  width: 100%;
+  overflow: visible;
+  h6 {
+    margin: 0 0 50px 0;
+    font-family: 'Yeseva One', cursive;
+    font-size: 30px;
+    line-height: 140%;
+    letter-spacing: 0;
+  }
+
+  &__form {
+    margin: 0 0 10px 0;
+  }
+
+  &__form-wrap {
+    width: 100%;
+    margin: 0 0 15px 0;
+
+    input {
+      width: 100%;
+      padding: 2px 10px 10px 0;
+      border: none;
+      border-bottom: 1px solid #000000;
+      outline: none;
+    }
+
+    input::placeholder {
+      font-size: 14px;
+      color: #BFBFBF;
+    }
+  }
+
+  &__form-wrap.error {
+    input {
+      border-bottom: 1px solid #FF0000;
+
+      &::placeholder {
+        color: #FF0000;
+      }
+    }
+
+    span {
+      font-size: 10px;
+      line-height: 140%;
+      color: #FF0000;
+    }
+  }
+
+  p {
+    margin: 5px 0 30px;
+    font-size: 10px;
+    line-height: 140%;
+    color: #BFBFBF;
+  }
+
+  .btn {
+    margin: 30px 0 0 0;
+    background-color: transparent;
+  }
+
+  .btn:hover {
+    background-color: #000;
+  }
+  .fancybox-button{
+    width: 25px;
+    height: 25px;
+    top: -45px;
+    opacity: 1;
+    svg{
+      display: none;
+    }
+    background-image: url("../images/dest/icons/close.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}

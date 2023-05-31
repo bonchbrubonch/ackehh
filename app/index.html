@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Yeseva+One&display=swap"
     rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
     integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -45,7 +45,7 @@
                 <li><a href="#">контакти</a></li>
               </ul>
             </nav>
-            <a href="#" class="header__modal-btn btn btn--white">
+            <a href="#" class="header__modal-btn btn btn--white" data-fancybox data-src="#modal">
               комерційна пропозиція
             </a>
             <button class="header__menu-btn">
@@ -855,6 +855,29 @@
     </footer>
   </div>
 
+
+  <div class="modal" id="modal">
+    <div class="modal__inner">
+      <h6>Отримати <br> комерційну пропозицію</h6>
+      <form class="modal__form">
+        <div class="modal__form-wrap">
+          <input type="text" placeholder="Ім’я*">
+        </div>
+        <div class="modal__form-wrap error">
+          <input type="email" placeholder="Email*">
+          <span>Error</span>
+        </div>
+        <div class="modal__form-wrap">
+          <input type="text" placeholder="+3 80 __ - ___ - __ - __">
+        </div>
+        <div class="modal__form-wrap">
+          <input type="text" placeholder="Повідомлення*">
+        </div>
+        <p>* натиснувши кнопку Ви даєте згоду на обробку персональних даних</p>
+        <button class="btn btn--black">Надіслати</button>
+      </form>
+    </div>
+  </div>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
