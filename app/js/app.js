@@ -1,5 +1,17 @@
 $(function () {
 
+  $(".header__menu-btn").on("click", function () {
+    $(".header__menu-btn").toggleClass("active");
+    $(".header__list").toggleClass("active");
+    $(".header--transparent").toggleClass("active");
+    $("body").toggleClass("lock");
+  });
+
+  $(".header__item-child span").on("click", function () {
+    $(this).toggleClass('active');
+    $(this).next().toggleClass('sub-menu--active');
+  });
+
   $('.intro-slider').slick({
     infinite: false,
     slidesToShow: 1,
@@ -17,6 +29,12 @@ $(function () {
     slidesToScroll: 1,
     prevArrow: '<button class="slider__left"><svg width="18" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.354 4.354a.5.5 0 000-.708L14.172.464a.5.5 0 10-.708.708L16.293 4l-2.829 2.828a.5.5 0 10.708.708l3.182-3.182zM0 4.5h17v-1H0v1z" fill="#fff"/></svg></button>',
     nextArrow: '<button class="slider__right"><svg width="18" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.354 4.354a.5.5 0 000-.708L14.172.464a.5.5 0 10-.708.708L16.293 4l-2.829 2.828a.5.5 0 10.708.708l3.182-3.182zM0 4.5h17v-1H0v1z" fill="#fff"/></svg></button>',
+    responsive: [{
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 1,
+      }
+    }]
   });
 
 
@@ -50,12 +68,18 @@ $(function () {
     nextArrow: '<button class="slider__right"><svg width="18" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.354 4.354a.5.5 0 000-.708L14.172.464a.5.5 0 10-.708.708L16.293 4l-2.829 2.828a.5.5 0 10.708.708l3.182-3.182zM0 4.5h17v-1H0v1z" fill="#fff"/></svg></button>',
   });
   $('.documentation-slider__bottom').slick({
+    asNavFor: '.documentation-slider__top',
     infinite: false,
     slidesToShow: 3,
     arrows: false,
     slidesToScroll: 1,
     variableWidth: true,
-    asNavFor: '.documentation-slider__top'
+    responsive: [{
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 1,
+      }
+    }]
   });
 
   $('.example-slider').slick({
@@ -65,6 +89,16 @@ $(function () {
     prevArrow: '<button class="slider__left"><svg width="18" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.354 4.354a.5.5 0 000-.708L14.172.464a.5.5 0 10-.708.708L16.293 4l-2.829 2.828a.5.5 0 10.708.708l3.182-3.182zM0 4.5h17v-1H0v1z" fill="#fff"/></svg></button>',
     nextArrow: '<button class="slider__right"><svg width="18" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.354 4.354a.5.5 0 000-.708L14.172.464a.5.5 0 10-.708.708L16.293 4l-2.829 2.828a.5.5 0 10.708.708l3.182-3.182zM0 4.5h17v-1H0v1z" fill="#fff"/></svg></button>',
   });
+
+  if ($(window).width() <= 700) {
+    $('.blog-slider').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false
+    });
+  }
+
 
   $('.service__inner').each(function () {
     let ths = $(this);

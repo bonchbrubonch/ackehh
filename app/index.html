@@ -39,15 +39,121 @@
             <nav class="header__menu">
               <ul class="header__list">
                 <li><a href="#">Головна</a></li>
-                <li><a href="#">Послуги</a></li>
-                <li><a href="#">портфоліо</a></li>
+                <li class="header__item-child">
+                  <span>Послуги</span>
+                  <ul class="header__submenu">
+                    <li class="header__item-child">
+                      <span>
+                        Лазерна різка
+                      </span>
+                      <ul class="header__submenu-2">
+                        <li>
+                          <a href="#">
+                            Підкатегорія 1
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            Підкатегорія 2
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            Підкатегорія 3
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Металообробка
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Металоконструкції
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Токарні роботи
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Металеві меблі
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__item-child">
+                  <span>портфоліо</span>
+                  <ul class="header__submenu">
+                    <li class="header__item-child">
+                      <span>
+                        Лазерна різка
+                      </span>
+                      <ul class="header__submenu-2">
+                        <li>
+                          <a href="#">
+                            Підкатегорія 1
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            Підкатегорія 2
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            Підкатегорія 3
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Металообробка
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Металоконструкції
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Токарні роботи
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Металеві меблі
+                      </a>
+                    </li>
+                  </ul>
+                </li>
                 <li><a href="#">новини</a></li>
                 <li><a href="#">контакти</a></li>
+                <li class="header__modal-cal">
+                  <a href="#" class="header__modal-btn btn btn--white" data-fancybox data-src="#modal">
+                    комерційна пропозиція
+                  </a>
+                </li>
+                <li class="header__social">
+                  <ul class="social">
+                    <li>
+                      <a href="#" target="_blank" rel="nofollow noopener noreferrer"><img src="images/dest/icons/fb.svg"
+                          alt="fb"></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank" rel="nofollow noopener noreferrer"><img src="images/dest/icons/inst.svg"
+                          alt="inst"></a>
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </nav>
-            <a href="#" class="header__modal-btn btn btn--white" data-fancybox data-src="#modal">
-              комерційна пропозиція
-            </a>
             <button class="header__menu-btn">
               <span></span>
             </button>
@@ -177,7 +283,7 @@
           </div>
         </div>
       </div>
-
+ 
       <section class="service">
         <div class="container">
           <h2 class="title">Ми пропонуємо</h2>
@@ -303,8 +409,8 @@
               Комплексні роботи: від креслень до готової продукції, нове обладнання, поки ми зробимо сайт і його
               запустим обладнання буде монтуватися на підприємстві, якість, конкурентна ціна, вчасно.
             </p>
-            <a href="#" class="btn btn--black">Детальніше</a>
           </div>
+          <a href="#" class="btn btn--black">Детальніше</a>
           <ul class="preference__list">
             <li>
               <div class="preference__list-img">
@@ -490,15 +596,15 @@
               <p>Lorem ipsum dolor sit amet consectetur. Porta facilisis nibh vitae adipiscing massa sit eu quis sem.
                 Sit in amet cras tempus et nibh interdum.</p>
             </div>
-            <a href="#" class="btn btn--white">Всі новини</a>
           </div>
-          <ul class="blog__list">
+          <a href="#" class="btn btn--white">Всі новини</a>
+          <ul class="blog__list blog-slider">
             <li class="blog__item">
               <div class="blog__img">
                 <img src="images/dest/content/blog-1.jpg" alt="img">
               </div>
               <span class="blog__date">16/05/23</span>
-              <h4>Лазерна різка металу та які її види бувають</h4>
+              <h4>Лазерна різка металу та які її види бувають 1234123</h4>
               <p>Лазерне різання листового металу – це високоякісний метод обробки листового прокату, за допомогою якого
                 можна виготовити деталі з контурами будь-якої складності та ідеально рівним краєм без подальшого
                 застосування механічної обробки.</p>
@@ -778,12 +884,7 @@
             </div>
           </div>
         </div>
-      </section>
-
-
-
-
-
+      </section> 
 
     </div>
     <footer class="footer">
@@ -810,7 +911,7 @@
             </form>
           </div>
         </div>
-        <div class="footer__mid">
+         <div class="footer__mid">
           <a href="#" class="footer__logo">
             <img src="images/dest/icons/logo.svg" alt="logo">
           </a>
@@ -820,9 +921,6 @@
             </li>
             <li>
               <a href="#">про компанію</a>
-            </li>
-            <li>
-              <a href="#">прайс</a>
             </li>
             <li>
               <a href="#">новини</a>
@@ -847,7 +945,7 @@
               </li>
             </ul>
           </div>
-        </div>
+        </div> 
         <div class="footer__bottom">
           © Copyright 2023, Розроблено SFdevelop
         </div>
