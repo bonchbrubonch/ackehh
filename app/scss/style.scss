@@ -288,7 +288,9 @@
   .title {
     margin: 0 0 22px 0;
   }
-
+  &__img-swipe{
+    display: none;
+  }
   &__buttons {
     border-bottom: 1px solid #FFFFFF;
     display: flex;
