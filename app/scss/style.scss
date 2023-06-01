@@ -926,6 +926,7 @@
       margin: 0 0 40px 0;
       font-family: 'Yeseva One', cursive;
       font-size: 30px;
+      line-height: 140%;
       color: #000637;
       letter-spacing: 0;
     }
@@ -976,6 +977,7 @@
 
 /*start contacts=================*/
 .contacts {
+  overflow: hidden;
   h2 {
     margin: 0 0 40px 0;
     font-size: 40px;
@@ -1310,7 +1312,7 @@
       text-transform: inherit;
     }
 
-    strong {
+    blockquote {
       margin: 0 0 20px 0;
       padding: 25px 25px 25px 95px;
       position: relative;
@@ -1539,7 +1541,7 @@
   padding: 100px 0 90px;
   background-color: #000;
   color: #fff;
-
+  overflow: hidden;
   &__inner {
     margin: 0 0 35px;
     display: flex;
@@ -1567,7 +1569,7 @@
 
   &__item {
     position: relative;
-    margin: 0 20px 0 0;
+
     height: 250px;
     overflow: hidden;
 
@@ -1603,7 +1605,9 @@
       letter-spacing: 0;
     }
   }
-
+  .slick-slide{
+    margin: 0 10px;
+  }
   .slick-arrow {
     z-index: 10;
     top: calc(50% - 40px);

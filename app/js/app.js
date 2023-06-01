@@ -88,6 +88,18 @@ $(function () {
     slidesToScroll: 1,
     prevArrow: '<button class="slider__left"><svg width="18" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.354 4.354a.5.5 0 000-.708L14.172.464a.5.5 0 10-.708.708L16.293 4l-2.829 2.828a.5.5 0 10.708.708l3.182-3.182zM0 4.5h17v-1H0v1z" fill="#fff"/></svg></button>',
     nextArrow: '<button class="slider__right"><svg width="18" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.354 4.354a.5.5 0 000-.708L14.172.464a.5.5 0 10-.708.708L16.293 4l-2.829 2.828a.5.5 0 10.708.708l3.182-3.182zM0 4.5h17v-1H0v1z" fill="#fff"/></svg></button>',
+    responsive: [{
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 468,
+      settings: {
+        slidesToShow: 1,
+      }
+    }]
   });
 
   if ($(window).width() <= 700) {
