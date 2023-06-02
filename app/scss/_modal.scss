@@ -4,6 +4,7 @@
   max-width: 540px;
   width: 100%;
   overflow: visible;
+
   h6 {
     margin: 0 0 50px 0;
     font-family: 'Yeseva One', cursive;
@@ -65,17 +66,92 @@
   .btn:hover {
     background-color: #000;
   }
-  .fancybox-button{
+
+  .fancybox-button {
     width: 25px;
     height: 25px;
     top: -45px;
     opacity: 1;
-    svg{
+
+    svg {
       display: none;
     }
+
     background-image: url("../images/dest/icons/close.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
   }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  ::-webkit-scrollbar {
+    height: 10px;
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #BFBFBF;
+    border-radius: 5px;
+
+
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+    border: 1px solid #BFBFBF;
+    border-radius: 5px;
+  }
+
+  h3 {
+    font-family: 'Yeseva One', cursive;
+    margin: 0 0 15px 0;
+    font-size: 30px;
+    line-height: 140%;
+  }
+
+  &__left {
+    margin: 0 25px 0 0;
+    max-width: 480px;
+  }
+
+  &__text {
+    max-height: 490px;
+    overflow: auto;
+    padding: 0 25px 0 0;
+
+    p {
+      margin: 0 0 15px 0;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: 0;
+      color: #000;
+    }
+  }
+
+  &__img {
+    max-width: 480px;
+    width: 100%;
+    
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  &--two {
+    max-width: 1065px;
+    padding: 50px 40px;
+  }
+
+
+}
+
+.fancybox-slide--html {
+  padding: 80px 10px;
 }

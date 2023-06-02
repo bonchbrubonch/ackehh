@@ -640,6 +640,32 @@
   .time p {
     font-size: 12px;
   }
+
+  .modal--two {
+    padding: 20px;
+  }
+
+  .modal__left {
+    max-width: 60%;
+  }
+
+  .modal__img {
+    max-width: 400%;
+  }
+
+  .modal h3 {
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  .modal__text p {
+    margin: 0 0 10px 0;
+    font-size: 12px;
+  }
+
+  .documentation__box {
+    max-height: 105px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -865,10 +891,12 @@
 
   .documentation__text a {
     font-size: 12px;
+    bottom: 13px;
+    margin: 0;
   }
 
   .documentation-slider__top .slick-arrow {
-    bottom: -10px;
+    bottom: 5px;
   }
 
   .footer__top {
@@ -1208,6 +1236,37 @@
       }
     }
   }
+
+  .documentation__box {
+    max-height: 185px;
+  }
+
+  .modal__content {
+    flex-direction: column;
+  }
+
+  .modal__left {
+    max-width: 100%;
+    margin: 0 0 25px 0;
+  }
+
+  .modal__img {
+    max-width: 300px;
+    height: 200px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .modal__text {
+    max-height: 170px;
+  }
+
+  .documentation__text {
+    padding: 0 0 80px 0;
+    height: 100%;
+  }
 }
 
 @media (max-width: 468px) {
@@ -1218,100 +1277,100 @@
     margin: 0 25px 25px auto;
   }
 
-    .card-info__text {
-      max-height: 199px;
-    }
+  .card-info__text {
+    max-height: 199px;
+  }
 
-    .team__item {
-      height: 150px;
+  .team__item {
+    height: 150px;
 
-      .team__info {
-        max-width: 175px;
-      }
-    }
-
-    .team__list li {
-      margin: 0 0 15px 25px;
-      width: calc(100% - 25px);
-      height: 315px;
-    }
-
-    .documentation__inner {
-      align-items: flex-start;
-    }
-
-    .documentation-slider__bottom {
-      left: 0;
-      transform: translateX(0);
-    }
-
-    .footer__mid {
-      margin: 50px 0 45px;
-      flex-direction: column;
-    }
-
-    .footer__mid ul:not(.social) {
-      column-count: 3;
-      column-gap: 5px;
-      width: 100%;
-      margin: 0 0 0 0;
-    }
-
-    .footer__logo {
-      margin: 0 0 23px 0;
-    }
-
-    .footer__mid ul:not(.social) li {
-      font-size: 11px;
-    }
-
-    .footer__social {
-      margin: 15px 0 -3px;
-
-      span {
-        font-size: 12px;
-        letter-spacing: 1px;
-      }
-    }
-
-    .footer__bottom {
-      font-size: 8px;
-    }
-
-    .blog__item {
-      width: calc(100% - 30px);
-    }
-
-    .portfolio__list li {
-      width: calc(100% - 20px);
-    }
-
-    .portfolio__info h6 {
-      font-size: 14px;
-      font-weight: 400;
-    }
-
-    .portfolio__info p {
-      font-size: 10px;
-    }
-
-    .list-decimal ul {
-      margin: 0 0 0 -67px;
-    }
-
-    .list-decimal li {
-      width: calc(100% - 67px) !important;
-    }
-
-    .list-decimal li {
-      margin: 0 0 43px 67px;
-    }
-
-    .example__item {
-      height: 204px;
-    }
-
-    .example-slider {
-      margin-left: -10px;
+    .team__info {
+      max-width: 175px;
     }
   }
+
+  .team__list li {
+    margin: 0 0 15px 25px;
+    width: calc(100% - 25px);
+    height: 315px;
+  }
+
+  .documentation__inner {
+    align-items: flex-start;
+  }
+
+  .documentation-slider__bottom {
+    left: 0;
+    transform: translateX(0);
+  }
+
+  .footer__mid {
+    margin: 50px 0 45px;
+    flex-direction: column;
+  }
+
+  .footer__mid ul:not(.social) {
+    column-count: 3;
+    column-gap: 5px;
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+
+  .footer__logo {
+    margin: 0 0 23px 0;
+  }
+
+  .footer__mid ul:not(.social) li {
+    font-size: 11px;
+  }
+
+  .footer__social {
+    margin: 15px 0 -3px;
+
+    span {
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .footer__bottom {
+    font-size: 8px;
+  }
+
+  .blog__item {
+    width: calc(100% - 30px);
+  }
+
+  .portfolio__list li {
+    width: calc(100% - 20px);
+  }
+
+  .portfolio__info h6 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .portfolio__info p {
+    font-size: 10px;
+  }
+
+  .list-decimal ul {
+    margin: 0 0 0 -67px;
+  }
+
+  .list-decimal li {
+    width: calc(100% - 67px) !important;
+  }
+
+  .list-decimal li {
+    margin: 0 0 43px 67px;
+  }
+
+  .example__item {
+    height: 204px;
+  }
+
+  .example-slider {
+    margin-left: -10px;
+  }
+}
