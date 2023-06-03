@@ -3,13 +3,22 @@ $(function () {
   $(".header__menu-btn").on("click", function () {
     $(".header__menu-btn").toggleClass("active");
     $(".header__list").toggleClass("active");
-    $(".header--transparent").toggleClass("active");
+    $(".header--transparent").addClass("active");
+
+    $(".header__item-child").removeClass("header__item-child--open");
+    $(".header__item-child-2").removeClass("header__item-child--open");
+
     $("body").toggleClass("lock");
   });
 
+  $(".header__mob-btn").on("click", function () {
+    $(this).next().addClass('header__item-child--open');
+    
+  });
+
   $(".header__item-child span").on("click", function () {
-    $(this).toggleClass('active');
-    $(this).next().toggleClass('sub-menu--active');
+    $(this).parent().removeClass('header__item-child--open');
+
   });
 
   $('.intro-slider').slick({
@@ -89,17 +98,18 @@ $(function () {
     prevArrow: '<button class="slider__left"><svg width="18" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.354 4.354a.5.5 0 000-.708L14.172.464a.5.5 0 10-.708.708L16.293 4l-2.829 2.828a.5.5 0 10.708.708l3.182-3.182zM0 4.5h17v-1H0v1z" fill="#fff"/></svg></button>',
     nextArrow: '<button class="slider__right"><svg width="18" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.354 4.354a.5.5 0 000-.708L14.172.464a.5.5 0 10-.708.708L16.293 4l-2.829 2.828a.5.5 0 10.708.708l3.182-3.182zM0 4.5h17v-1H0v1z" fill="#fff"/></svg></button>',
     responsive: [{
-      breakpoint: 700,
-      settings: {
-        slidesToShow: 2,
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 468,
+        settings: {
+          slidesToShow: 1,
+        }
       }
-    },
-    {
-      breakpoint: 468,
-      settings: {
-        slidesToShow: 1,
-      }
-    }]
+    ]
   });
 
   if ($(window).width() <= 700) {
@@ -137,8 +147,8 @@ $(function () {
   });
 
   $(".card-info__read-more").on("click", function () {
-    $(".card-info__read-more").addClass("active")
-    $(".card-info__text").addClass("open")
+    $(".card-info__read-more").toggleClass("active")
+    $(".card-info__text").toggleClass("open")
   });
 
 
