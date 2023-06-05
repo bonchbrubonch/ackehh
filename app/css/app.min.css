@@ -3816,6 +3816,9 @@ body.lock {
     font-size: 14px;
     text-transform: capitalize;
   }
+  .article {
+    padding: 0 0 50px 0;
+  }
 }
 
 @media (max-width: 700px) {
@@ -3936,8 +3939,9 @@ body.lock {
     -webkit-line-clamp: 6;
     line-clamp: 6;
   }
-  .blog.blog--news {
-    padding: 0 0 30px 0;
+  .blog.blog--news,
+  .portfolio {
+    padding: 0 0 50px 0;
   }
   .blog .btn {
     top: auto;
@@ -4150,7 +4154,7 @@ body.lock {
     display: none;
   }
   .question {
-    padding: 33px 0 28px;
+    padding: 50px 0 50px;
     border-bottom: 5px solid #fff;
   }
   .portfolio__list li {
@@ -4191,7 +4195,7 @@ body.lock {
     font-size: 12px;
   }
   .card-info {
-    padding: 0 0 43px 0;
+    padding: 0 0 50px 0;
   }
   .card-info .btn {
     padding: 8px 30px;
@@ -4200,7 +4204,7 @@ body.lock {
     width: calc(50% - 60px) !important;
   }
   .benefit {
-    padding: 30px 0 0;
+    padding: 50px 0 0;
   }
   .works-slider {
     position: relative;
@@ -4223,7 +4227,7 @@ body.lock {
     width: 100%;
   }
   .works {
-    padding: 43px 0 60px;
+    padding: 50px 0 50px;
   }
   .example .container {
     position: relative;
@@ -4246,7 +4250,7 @@ body.lock {
     font-size: 10px;
   }
   .example {
-    padding: 31px 0 76px;
+    padding: 50px 0 100px;
   }
   .example__box {
     margin: 0 0 10px 0;
@@ -4266,7 +4270,7 @@ body.lock {
     bottom: -70px;
   }
   .cost {
-    padding: 50px 0 60px;
+    padding: 50px 0 50px;
   }
   .cost__inner {
     margin: 0 0 45px 0;
@@ -4283,7 +4287,7 @@ body.lock {
     height: 25px;
   }
   .time {
-    padding: 50px 0 45px;
+    padding: 50px 0 0;
     background-color: #EFEFEF;
   }
   .service__img-swipe {
@@ -4409,11 +4413,8 @@ body.lock {
   .footer__logo {
     margin: 0 0 23px 0;
   }
-  .footer__mid ul:not(.social) li {
-    font-size: 11px;
-  }
   .footer__social {
-    margin: 15px 0 -3px;
+    margin: 30px 0 -3px;
   }
   .footer__social span {
     font-size: 12px;
