@@ -3836,7 +3836,7 @@ body.lock {
     padding: 50px 0 60px;
   }
   .intro__item {
-    padding: 165px 0 0 0;
+    padding: 165px 0 45px 0;
   }
   .intro__item-box {
     -webkit-box-orient: vertical;
@@ -3855,7 +3855,7 @@ body.lock {
   }
   .intro .slick-arrow {
     top: auto;
-    bottom: 0;
+    bottom: 38px;
   }
   .service__item {
     -webkit-box-orient: vertical;

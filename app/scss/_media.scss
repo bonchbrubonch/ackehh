@@ -70,11 +70,12 @@
 }
 
 @media (max-width: 1000px) {
-  .header__social{
+  .header__social {
     position: relative;
     z-index: 99998;
     margin-top: auto !important;
   }
+
   .header__list-inner {
     position: relative;
     max-width: 370px;
@@ -183,9 +184,11 @@
       transform: rotate(45deg);
       top: 8px;
     }
-    span{
+
+    span {
       opacity: 0;
     }
+
     &::after {
       transform: rotate(-45deg);
       bottom: 8px;
@@ -756,6 +759,7 @@
     font-size: 14px;
     text-transform: capitalize;
   }
+
 }
 
 @media (max-width: 700px) {
@@ -781,7 +785,7 @@
   }
 
   .intro__item {
-    padding: 165px 0 0 0;
+    padding: 165px 0 45px 0;
   }
 
   .intro__item-box {
@@ -799,7 +803,7 @@
 
   .intro .slick-arrow {
     top: auto;
-    bottom: 0;
+    bottom: 38px;
   }
 
   .service__item {
