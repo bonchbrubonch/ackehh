@@ -35,21 +35,7 @@
     }
   }
 
-  &__form-wrap.error {
-    input {
-      border-bottom: 1px solid #FF0000;
 
-      &::placeholder {
-        color: #FF0000;
-      }
-    }
-
-    span {
-      font-size: 10px;
-      line-height: 140%;
-      color: #FF0000;
-    }
-  }
 
   p {
     margin: 5px 0 30px;

@@ -583,6 +583,36 @@ body.lock {
   pointer-events: none;
 }
 
+.error input {
+  border-bottom: 1px solid #FF0000 !important;
+}
+
+.error input::-webkit-input-placeholder {
+  color: #FF0000 !important;
+}
+
+.error input::-moz-placeholder {
+  color: #FF0000 !important;
+}
+
+.error input:-ms-input-placeholder {
+  color: #FF0000 !important;
+}
+
+.error input::-ms-input-placeholder {
+  color: #FF0000 !important;
+}
+
+.error input::placeholder {
+  color: #FF0000 !important;
+}
+
+.error span {
+  font-size: 10px;
+  line-height: 140%;
+  color: #FF0000;
+}
+
 .btn {
   padding: 10px 30px;
   display: block;
@@ -916,36 +946,6 @@ body.lock {
 .modal__form-wrap input::placeholder {
   font-size: 14px;
   color: #BFBFBF;
-}
-
-.modal__form-wrap.error input {
-  border-bottom: 1px solid #FF0000;
-}
-
-.modal__form-wrap.error input::-webkit-input-placeholder {
-  color: #FF0000;
-}
-
-.modal__form-wrap.error input::-moz-placeholder {
-  color: #FF0000;
-}
-
-.modal__form-wrap.error input:-ms-input-placeholder {
-  color: #FF0000;
-}
-
-.modal__form-wrap.error input::-ms-input-placeholder {
-  color: #FF0000;
-}
-
-.modal__form-wrap.error input::placeholder {
-  color: #FF0000;
-}
-
-.modal__form-wrap.error span {
-  font-size: 10px;
-  line-height: 140%;
-  color: #FF0000;
 }
 
 .modal p {
@@ -3164,6 +3164,10 @@ body.lock {
   letter-spacing: 0;
 }
 
+.footer .btn {
+  height: 36px;
+}
+
 /*end footer==============*/
 @media (min-width: 1001px) {
   .header__item-child ul,
@@ -3818,6 +3822,9 @@ body.lock {
   }
   .article {
     padding: 0 0 50px 0;
+  }
+  .footer .btn {
+    height: 34px;
   }
 }
 
